@@ -1,0 +1,628 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+header{
+    width: 100%;
+    color: white;
+    position: sticky;
+    top: 0px;
+}
+nav{
+    width: 100%;
+    background-color: #2189d8;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftHeaderBox{
+    display: flex;
+    align-items: center;
+}
+.leftHeaderBox img{
+    height: 60px;
+    margin: 0 25px;
+}
+.leftHeaderBox h3{
+    font-size: 25px;
+}
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 52%;
+}
+.navBar li{
+    list-style: none;
+}
+.navBar a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+.navBar li:hover{
+    border-bottom: 2px solid darkgreen;
+}
+.navBar li a:hover{
+    color: aqua;
+}
+.hamburger{
+    display: none;
+}
+
+
+
+
+.body{
+    width: 100%;
+    min-height: 800px;
+    background:  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),url("ctuScholarhipbg.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.body h1{
+    width: 65%;
+    color: white;
+    font-size: 90px;
+    -webkit-text-stroke: 1px black;
+    font-weight:bold;
+    font-family: Franklin Gothic Medium;
+}
+.body2{
+    width: 100%;
+}
+.body2 #introP{
+    font-size: 17px;
+}
+.body2 p{
+    line-height: 25px;
+}
+.body2 .body2Box{
+    width: 100%;
+    padding: 60px 7%;
+    display: flex;
+    flex-direction: column;
+}
+.body2 .allLinksBox{
+    min-height: 700px;
+    margin-bottom: 30px;
+}
+.body2 .body2Box .allLinksBox .link{
+    max-width: 500px;
+}    
+.allLinksBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 520px;
+    margin-top: 20px;
+}
+#headInfo{
+    font-family: Lato;
+    font-size: 34px;
+    margin: 5px auto 5px 0px;
+}
+#introP{
+    font-family: Lato;
+    margin: 15px auto 20px 0px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 30px;
+}
+.allLinksBox p{
+    font-size: 16px;
+    font-family: Lato;
+    margin: 15px 0;
+}
+.link{
+    border-bottom: 5px solid lightgrey;
+    max-width: 400px;
+    padding: 10px;
+}
+.link a{
+    text-decoration: none;
+    color: rgb(7, 103, 187);
+    font-family: Lato;
+    font-size: 22px;
+    font-weight: 600;
+    width: fit-content;
+}
+.link a:hover{
+    color: rgb(74, 7, 136);
+}
+.body3{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body3 .headerContainer{
+    width:100%;
+    min-height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+}
+.body3 .headerContainer p{
+    line-height: 30px;
+}
+.body3 h1{
+    font-size: 50px;
+    margin: 10px auto;
+}
+.body3 .bosses{
+    padding: 25px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgb(1,70,1);
+    width: 100%;
+    min-height: 450px;
+    color:white;
+    text-align: center;
+}
+.body3 .bigBoss{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.body3 .bigBoss a{
+    color: white;
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+.body3 .bigBoss a:hover{
+    color: skyblue;
+}
+.body3 .Jane{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.body3 .Jane a{
+    color: white;
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+.body3 .Jane a:hover{
+    color: skyblue;
+}
+.body3 .workers{
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    background-color: aqua;
+    padding: 55px 15px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    gap: 20px;
+}
+.body3 .workers label{
+    font-size: 16px;
+}
+.body3 .Chynna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.body3 .Chynna a{
+    color: rgb(32, 30, 30);
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+.body3 .Chynna a:hover{
+    color: beige;
+}
+.body3 .Grace{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.body3 .Grace a{
+    color: rgb(32, 30, 30);
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+.body3 .Grace a:hover{
+    color: beige;
+}
+.body3 .Grey{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.body3 .Grey a{
+    color: rgb(32, 30, 30);
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+.body3 .Grey a:hover{
+    color: beige;
+}
+.body3 .Clint{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.body3 .Clint a{
+    color: rgb(32, 30, 30);
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+.body3 .Clint a:hover{
+    color: beige;
+}
+.body3 .form{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px auto 25px auto;
+}
+.body3 iframe{
+    height: 500px;
+    width: 100%;
+}
+.body4 #introP{
+    font-size: 17px;
+}
+.body4 p{
+    line-height: 25px;
+}
+.body4 .body4Box{
+    width: 100%;
+    padding: 60px 7%;
+    display: flex;
+    flex-direction: column;
+}
+.body4 .allLinksBox{
+    height: 400px;
+    margin-bottom: 30px;
+}
+.body4 .body4Box .allLinksBox .link{
+    max-width: 900px;
+    
+}
+.serviceHeaders{
+    margin-top: 25px;
+    font-size: 22px;
+}
+.body5{
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url("ctuMainbg.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: fit-content;
+    padding: 50px;
+}
+.body5 .body5Box{
+    background-color: white;
+    width: 75%;
+    height: fit-content;
+    padding: 35px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.body5 .body5Box .update h3{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.body5 .body5Box p{
+    margin: 20px auto;
+    font-size: 15px;
+    line-height: 30px;
+    transition: all 0.3s ease;
+}
+.body5Box h1{
+    font-size: 28px;
+    margin: 15px auto 5px auto;
+}
+.body5Box .dropDownButton{
+    cursor: pointer;
+}
+.body5Box .dropDownButton:hover{
+    background-color: aqua;
+}
+.body6{
+    width: 100%;
+}
+.body6 #introP{
+    font-size: 17px;
+}
+.body6 p{
+    line-height: 25px;
+}
+.body6 .body6Box{
+    width: 100%;
+    padding: 60px 7%;
+    display: flex;
+    flex-direction: column;
+}
+.body6 .allLinksBox{
+    min-height: 700px;
+    margin-bottom: 30px;
+}
+.body6 .body6Box .allLinksBox .link{
+    max-width: 500px;
+}    
+
+
+
+
+footer{
+    margin-top: auto;
+    background-color: darkgreen;
+    color: white;
+    width: 100%;
+}
+.footer1Container{
+    margin: 25px auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+.footer1Container p{
+    font-size: 14px;
+}
+.footer1Container a{
+    text-decoration: none;
+    color: white;
+}
+.footer1Container .socialLinks a{
+    color: white;
+    margin:0px 10px 10px 10px;
+    display: inline-block;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: grey;
+    transition: all 0.3s ease;
+}
+.footer1Container .socialLinks a:hover{
+    background-color: black;
+}
+@media(max-width: 1230px){
+    .body2 .link{
+        max-width: 700px;
+    }
+    .body2 .allLinksBox{
+        height: fit-content;
+    }
+
+    .body4 .allLinksBox{
+        height: fit-content;
+    }
+    .body4 .body4Box .allLinksBox .link{
+        max-width: 700px;
+    }
+}
+@media(min-width: 1055px) and (max-width: 1200px){
+    .body h1{
+        margin-top: 50px;
+    }
+}
+@media(max-width: 1058px){
+    .body h1{
+        font-size: 75px;
+    }
+}
+@media(max-width: 1000px){
+    .navBar{
+        position: fixed;
+        width: 100%;
+        left:-100%;
+        top:70px;
+        background-color: #2189d8;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transition: all 0.4s ease;
+    }
+    .navBar li{
+        margin: 12px auto;
+    }
+    .body h1{
+        font-size: 70px;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 40px;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+    .bun{
+        height: 3px;
+        width: 40px;
+        background-color: aqua;
+        margin: 4px auto;
+    }
+    .hamburger.active :nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active :nth-child(1){
+        transform: translateY(11px) rotate(45deg);
+    }
+    .hamburger.active :nth-child(3){
+        transform: translateY(-11px) rotate(-45deg);
+    }
+    .navBar.active{
+        left:0;
+    }
+    .body2{
+        min-height: fit-content;
+    }
+    
+    
+
+
+}
+@media(max-width: 830px){
+    .body h1{
+        font-size: 55px;
+    }
+    .body2{
+        min-height: fit-content;
+    }
+   
+   
+}
+@media(max-width: 645px){
+    .body h1{
+        margin-top: 80px;
+    }
+    .link a{
+        font-size: 18px;
+    }
+    .body5 .body5Box .update h3{
+        font-size: 16px;
+    }
+    .body5 .date{
+        font-size: 15px;
+        margin: 3px auto;
+    }
+    .body5Box .update p{
+        display: none;
+        font-size: 13px;
+    }
+    .body5Box .update #announcements{
+        display: block;
+        font-size: 15px;
+    }
+    .body5Box h1{
+        font-size: 28px;
+        margin-bottom: 3px;
+    }
+}
+@media(max-width: 445px){
+    .leftHeaderBox h3{
+        font-size: 18px;
+    }
+    .leftHeaderBox img{
+        margin-right: 8px;
+        height: 50px;
+    }
+    .body h1{
+        margin-top: 120px;
+    }
+    nav{
+        justify-content: start;
+    }
+    nav .hamburger{
+        order:1;
+        margin: auto 25px;
+    }
+    .bun{
+        width: 30px;
+    }
+    nav .leftHeaderBox{
+        order:2;
+    }
+    nav .leftHeaderBox img{
+        margin-left: 0;
+    }
+    .link a{
+        font-size: 15px;
+    }
+    .body3 .bosses img{
+        height: 250px;
+    }
+    .body3 .workers img{
+        height: 220px;
+    }
+    .body5 .body5Box .update h3{
+        font-size: 11px;
+    }
+    .body5 .body5Box .update p{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .body5Box h1{
+        font-size: 18px;
+    }
+}
+@media(max-width: 350px){
+    .body h1{
+        font-size: 40px;
+    }
+    nav .leftHeaderBox h3{
+        font-size: 15px;
+    }
+    .body2 h3{
+        display: none;
+    }
+    .link a{
+        font-size: 18px;
+    }
+    .body6 .allLinksBox p{
+        font-size: 13px;
+    }
+}
+@media(min-height: 870px){
+    .body{
+        min-height: 845px;
+    }
+    .body5{
+        min-height: 850px;
+    }
+}   
+@media(min-height: 1148px){
+    .body{
+        min-height: 1000px;
+    }
+    .body2{
+        min-height: 1000px;
+    }
+}

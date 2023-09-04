@@ -18,7 +18,7 @@ body{
 header{
     width: 100%;
     color: white;
-    position: sticky;
+    position: fixed;
     top: 0px;
 }
 nav{
@@ -69,7 +69,9 @@ nav{
 
 
 
-
+section{
+    margin-top: 70px;
+}
 .body{
     width: 100%;
     min-height: 800px;
@@ -378,6 +380,9 @@ nav{
 .body5Box .dropDownButton:hover{
     background-color: aqua;
 }
+.body5 i{
+    transition: all 0.4s ease;
+}
 .body5 .updateContent img{
     height: 200px;
     float: left; 
@@ -518,10 +523,10 @@ footer{
         opacity: 0;
     }
     .hamburger.active :nth-child(1){
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(405deg);
     }
     .hamburger.active :nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(315deg);
     }
     .navBar.active{
         left:0;

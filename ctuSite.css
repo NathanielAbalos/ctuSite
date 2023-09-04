@@ -2,7 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Lato, Franklin Gothic Medium, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Lato, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
 }
 body{
@@ -51,6 +51,7 @@ nav{
     list-style: none;
 }
 .navBar a{
+    font-family: Lato;
     text-decoration: none;
     color: white;
     transition: all 0.3s ease;
@@ -413,9 +414,11 @@ footer{
     gap: 15px;
 }
 .footer1Container p{
+    font-family: Lato;
     font-size: 14px;
 }
 .footer1Container a{
+    font-family: Lato;
     text-decoration: none;
     color: white;
 }

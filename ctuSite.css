@@ -39,6 +39,7 @@ nav{
 }
 .leftHeaderBox h3{
     font-size: 25px;
+    font-family: Lato;
 }
 .navBar{
     display: flex;

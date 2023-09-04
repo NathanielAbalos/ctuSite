@@ -413,6 +413,15 @@ footer{
     text-align: center;
     gap: 15px;
 }
+.footer1Container h3{
+    font-family: Lato;
+}
+.footer1Container h2{
+    font-family: Lato;
+}
+.footer1Container h1{
+    font-family: Lato;
+}
 .footer1Container p{
     font-family: Lato;
     font-size: 14px;

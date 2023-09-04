@@ -378,6 +378,11 @@ nav{
 .body5Box .dropDownButton:hover{
     background-color: aqua;
 }
+.body5 .updateContent img{
+    height: 200px;
+    float: left; 
+    margin-right: 15px;
+}
 .body6{
     width: 100%;
 }
@@ -551,8 +556,10 @@ footer{
         margin: 3px auto;
     }
     .body5Box .update p{
-        display: none;
         font-size: 13px;
+    }
+    .body5Box .update .updateContent{
+        display: block;
     }
     .body5Box .update #announcements{
         display: block;
@@ -561,6 +568,9 @@ footer{
     .body5Box h1{
         font-size: 28px;
         margin-bottom: 3px;
+    }
+    .body5 .updateContent img{
+        height: 100px;
     }
 }
 @media(max-width: 445px){

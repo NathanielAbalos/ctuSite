@@ -9,16 +9,6 @@ hamburger.addEventListener("click",(event)=>{
     navMobile.classList.toggle("active");
 });
 
-for(let i = 0; i<dropDownButton.length; i++){
-dropDownButton[i].addEventListener("click",(event) =>{
-    if(dropDownButton[i].nextElementSibling.style.display==="none"){
-        dropDownButton[i].nextElementSibling.style.display="block";
-    }
-    else{
-        dropDownButton[i].nextElementSibling.style.display="none";
-    }
-});
-};
 
 
 window.onload=function(){
@@ -34,4 +24,18 @@ window.onload=function(){
     else{
         dateDisplay.textContent=`As of ${month+1}/${dayOfMonth}/${year}, here are our latest updates`;
     }
+    
+    for(let i = 0; i<dropDownButton.length; i++){
+    dropDownButton[i].addEventListener("click",(event) =>{
+        if(dropDownButton[i].nextElementSibling.style.display==="none"){
+            dropDownButton[i].nextElementSibling.style.display="block";
+            dropDownButton[i].firstChild.style="transform: rotate(0deg);";
+            
+        }
+        else{
+            dropDownButton[i].nextElementSibling.style.display="none";
+            dropDownButton[i].firstChild.style="transform: rotate(180deg);";
+        }
+    });
+    };
 }

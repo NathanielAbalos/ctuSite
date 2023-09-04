@@ -62,6 +62,7 @@ nav{
 }
 .hamburger{
     display: none;
+    margin-left: 20px;
 }
 
 
@@ -420,7 +421,7 @@ footer{
 .footer1Container .socialLinks a{
     color: white;
     margin:0px 10px 10px 10px;
-    display: inline-block;
+    display:inline-block;
     line-height: 40px;
     width: 40px;
     height: 40px;
@@ -476,27 +477,26 @@ footer{
         font-size: 70px;
     }
     .hamburger{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 40px;
+        display: block;
         margin-right: 25px;
         cursor: pointer;
     }
     .bun{
+        transition: all 0.5s ease;
+        display: block;
         height: 3px;
-        width: 40px;
+        width: 25px;
         background-color: aqua;
-        margin: 4px auto;
+        margin: 5px auto;
     }
     .hamburger.active :nth-child(2){
         opacity: 0;
     }
     .hamburger.active :nth-child(1){
-        transform: translateY(11px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
     }
     .hamburger.active :nth-child(3){
-        transform: translateY(-11px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
     .navBar.active{
         left:0;
@@ -522,9 +522,6 @@ footer{
 @media(max-width: 645px){
     .body h1{
         margin-top: 80px;
-    }
-    .link a{
-        font-size: 18px;
     }
     .body5 .body5Box .update h3{
         font-size: 16px;
@@ -557,25 +554,7 @@ footer{
     .body h1{
         margin-top: 120px;
     }
-    nav{
-        justify-content: start;
-    }
-    nav .hamburger{
-        order:1;
-        margin: auto 25px;
-    }
-    .bun{
-        width: 30px;
-    }
-    nav .leftHeaderBox{
-        order:2;
-    }
-    nav .leftHeaderBox img{
-        margin-left: 0;
-    }
-    .link a{
-        font-size: 15px;
-    }
+    
     .body3 .bosses img{
         height: 250px;
     }
@@ -614,15 +593,13 @@ footer{
     .body{
         min-height: 845px;
     }
-    .body5{
-        min-height: 850px;
-    }
+    
 }   
 @media(min-height: 1148px){
     .body{
-        min-height: 1000px;
+        min-height: 1200px;
     }
     .body2{
-        min-height: 1000px;
+        min-height: fit-content;
     }
 }

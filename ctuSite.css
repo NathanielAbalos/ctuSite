@@ -349,13 +349,17 @@ section{
 }
 .body5 .body5Box{
     background-color: white;
-    width: 75%;
+    width: 85%;
     height: fit-content;
     padding: 35px;
     color: black;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    transition: all 0.4s ease;
+}
+.body5 .body5Box .update .updateContent{
+    transition: all 0.3s ease;
 }
 .body5 .body5Box .update h3{
     margin-top: 20px;
@@ -377,6 +381,9 @@ section{
 .body5Box .dropDownButton{
     cursor: pointer;
 }
+.body5Box .dropDownButton i{
+    transform: rotate(180deg);
+}
 .body5Box .dropDownButton:hover{
     background-color: aqua;
 }
@@ -384,7 +391,7 @@ section{
     transition: all 0.4s ease;
 }
 .body5 .updateContent img{
-    height: 200px;
+    height: 400px;
     float: left; 
     margin-right: 15px;
 }
@@ -546,7 +553,9 @@ footer{
     .body2{
         min-height: fit-content;
     }
-   
+    .body5 .updateContent img{
+        height: 250px;
+    }
    
 }
 @media(max-width: 645px){
@@ -559,6 +568,13 @@ footer{
     .body5 .date{
         font-size: 15px;
         margin: 3px auto;
+    }
+    .body5{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .body5 .body5Box{
+        width: 90%;
     }
     .body5Box .update p{
         font-size: 13px;
@@ -575,7 +591,7 @@ footer{
         margin-bottom: 3px;
     }
     .body5 .updateContent img{
-        height: 100px;
+        height: 165px;
     }
 }
 @media(max-width: 445px){
@@ -596,13 +612,7 @@ footer{
     .body3 .workers img{
         height: 220px;
     }
-    .body5 .body5Box .update h3{
-        font-size: 11px;
-    }
-    .body5 .body5Box .update p{
-        font-size: 10px;
-        line-height: 20px;
-    }
+    
     .body5Box h1{
         font-size: 18px;
     }

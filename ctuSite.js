@@ -29,12 +29,12 @@ window.onload=function(){
     dropDownButton[i].addEventListener("click",(event) =>{
         if(dropDownButton[i].nextElementSibling.style.display==="none"){
             dropDownButton[i].nextElementSibling.style.display="block";
-            dropDownButton[i].firstChild.style="transform: rotate(0deg);";
+            dropDownButton[i].firstChild.style="transform: rotate(180deg);";
             
         }
         else{
             dropDownButton[i].nextElementSibling.style.display="none";
-            dropDownButton[i].firstChild.style="transform: rotate(180deg);";
+            dropDownButton[i].firstChild.style="transform: rotate(0deg);";
         }
     });
     };
